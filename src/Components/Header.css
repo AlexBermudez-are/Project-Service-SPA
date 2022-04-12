@@ -1,0 +1,20 @@
+.container-Component-Home-Header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-Vector-Search{
+    display: flex;
+    width: 40%;
+    height: 35px;
+    justify-content: space-evenly;
+}
+ .section-Vector-Search input {
+    width: 75%;
+ }
+ .section-Vector-Search button {
+    margin: 0;
+    padding: 0;
+    border: none;
+ }

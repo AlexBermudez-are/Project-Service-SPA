@@ -1,42 +1,70 @@
-<p align="center">
-  <a href='https://weremote.net'>
-    <img src="https://weremote.net/wp-content/uploads/2021/04/Logo-WR.svg" width="300" />
-  </a>
-</p>
-<br />
+# Getting Started with Create React App
 
-## Descripción
-**Frontend DEV Challenge** es una prueba de admisión para desarrolladores en HTML, CSS, JavaScript.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Pasos
-1. Crear un **fork** y entregar el enlace del repositorio de tu usuario. Evaluaremos la prueba en tu repositorio personal.
-2. Utilizar el diseño que debe finalizar y que está disponible en Figma (solo una pantalla): https://www.figma.com/file/FxX6dCznISsNkztnRa59Rf/Figma-Test?node-id=0%3A1
-3. Montar el código en HTML5, CSS3 y JS con efectos y animaciones.
-4. Usar buenas prácticas de HTML para SEO.
+## Available Scripts
 
-## Buenas prácticas y sugerencias
-1. Mobile first.
-2. Layout responsive y cross-browser.
-3. Código legible y bien estructurado.
-4. HTML optimizado para SEO.
-5. Idioma del código y comentarios en inglés.
-6. Se puede utilizar una UI lib **solo para el GRID**, el resto debe ser desarrollado (colores, textos, botones, forms, paddings, margins, etc).
-7. **CSS**  
-a. Usar animaciones simples de hover, animaciones de mensaje del formulario o de búsqueda, etc. 
-b. Usar **nomenclatura BEM** para estilos.   
-c. Utilizar los estilos de color y textos **creados en Figma**.   
-d. Utilizar 8px GRID para espacios, paddings, margins.  
-e. Si se considera necesario, se pueden utilizar variables.  
-8. **JavaScript**  
-a. **No utilizar jQuery**, solamente JS puro ES6.  
-b. Utilizar la nomenclatura **camelCase**.  
-c. Como sugerencia: recomendamos crear una función de *alert* para enviar el formulario (puede ser envío falso, solo una alerta), un Listener de scroll para mostrar/ocultar algún botón o el banner fijo/flotante, click del FAQ/Accordion, abrir y cerrar un modal.
+In the project directory, you can run:
 
-## Plus
-1. Componer el proyecto en **ReactJS** (no olvidar añadir el readme al proyecto final).
-2. SCSS/SASS
+### `npm start`
 
-## Fecha límite
-1. Siete días (7 días) a partir del correo electrónico de envío del Desafío Tech. La fecha exacta está en el correo electrónico.
-2. Notificar en el correo electrónico la finalización y enviar solamente la url del repositorio para evaluación.
-3. Utilizar siempre en el correo electrónico la opción "Responder a todos".
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
