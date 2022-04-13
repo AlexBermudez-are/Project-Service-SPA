@@ -1,0 +1,88 @@
+.container-Newsletter-Component {
+    position: relative;
+    width: 100%;
+    height: 134px;
+}
+
+.Newsletter {
+    height: 100px;
+    width: 30%;
+}
+
+.input-Vector {
+    display: flex;
+    flex-direction: column;
+    height: 95px;
+    justify-content: space-evenly;
+    width: 60%;
+    align-items: flex-start;
+    margin-top: 1%;
+}
+
+.text-Title-Newsletter {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.text-Text-Newsletter {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #555555;
+    margin: 0;
+}
+.input-Email-Newsletter{
+    border: none;
+    background-color: #ECF0F7;
+    width: 65%;
+    height: 95%;
+    outline: none;
+}
+.label-Newsletter {
+    display: flex;
+    justify-content: space-evenly;
+    height: 35px;
+    border: 1px solid #CACACA;
+    color: #B1B1B1;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.btn-suscribirse {
+    width: 30%;
+    border: none;
+    background-color: #696969;
+    color: white;
+    border-radius: 5px;
+    height: 85%;
+}
+
+.vector-Newsletter {
+    height: 100px;
+    width: 30%;
+}
+
+.rectangle-Container {
+    width: 100%;
+    height: 100px;
+    background-color: #ECF0F7;
+    position: absolute;
+    z-index: 994;
+    top: 24%;
+}
+
+.container-Input-Vector {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    z-index: 995;
+    justify-content: space-evenly;
+    position: absolute;
+}

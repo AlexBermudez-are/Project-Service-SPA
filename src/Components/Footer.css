@@ -1,0 +1,55 @@
+.container-Footer-Component {
+    background-color: #265E6C;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.text-Footer-Container-Logo {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.vector-MContigo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.text-Footer {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    width: 70%;
+    margin: 0;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.container-Links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.links-Footer-Component {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    width: 95%;
+    margin: auto;
+    text-decoration: none;
+}

@@ -1,7 +1,26 @@
 .container-Component-Home-Header {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    background-color: white;
+    z-index: 999;
+}
+
+.container-Logo-Header {
+    padding-left: 45%;
+}
+
+.btn-Hamburguer {
+    z-index: 999;
+    left: 0;
+    position: fixed;
+    transition: all .3s ease;
+}
+.btn-Hamburguer.active{
+    left: 30%;
+    transition: all .2s ease;
 }
 
 .section-Vector-Search {

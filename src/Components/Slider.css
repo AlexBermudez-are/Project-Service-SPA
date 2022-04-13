@@ -56,3 +56,10 @@
 .ul-List li {
     cursor: pointer;
 }
+
+.comillas{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}

@@ -39,7 +39,6 @@ const Carrusel = () => {
                 return timeOut = setTimeout(() => {
                     imgRefCarrusel.current.className = "img-Home-Actual"; //cambia la opacidad de 0 a 1
                     setimgActual(arrPhotos[contador]);
-                    console.log("khe");
                 }, 500);
             }
             if (contador < arrPhotos.length - 1) {
@@ -50,7 +49,6 @@ const Carrusel = () => {
                 return timeOut = setTimeout(() => {
                     imgRefCarrusel.current.className = "img-Home-Actual"; //cambia la opacidad de 0 a 1
                     setimgActual(arrPhotos[contador]);
-                    console.log("esta pasando");
                 }, 500);
             }
         }, 5000);

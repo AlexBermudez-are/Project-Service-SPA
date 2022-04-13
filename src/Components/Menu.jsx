@@ -13,7 +13,7 @@ const Menu = ({ controllBtn, setControllBtn }) => {
     const ControllAnimation = useRef()
 
     useEffect(() => {
-        if (setControllBtn) {
+        if (controllBtn) {
             ControllAnimation.current.className = "container-Sections-Menu-Hamburguer active"
         } else {
             ControllAnimation.current.className = "container-Sections-Menu-Hamburguer"
@@ -34,8 +34,10 @@ const Menu = ({ controllBtn, setControllBtn }) => {
                         Embarazo.map((el, index) => {
                             return <ul key={index} className='container-List'>
                                 <li className='li-Redirect-Pages'>
-                                    <a className='a-Menu-Link' href="/asdasd">{el}</a>
-                                    <VectorLeft className='vector-Left' />
+                                    <a className='a-Menu-Link' href="/asdasd">
+                                        {el}
+                                        <VectorLeft className='vector-Left' />
+                                    </a>
                                 </li>
                             </ul>
                         })
@@ -48,8 +50,10 @@ const Menu = ({ controllBtn, setControllBtn }) => {
                         Educacion.map((el, index) => {
                             return <ul key={index} className='container-List'>
                                 <li className='li-Redirect-Pages'>
-                                    <a className='a-Menu-Link' href="/asdasd">{el}</a>
-                                    <VectorLeft className='vector-Left' />
+                                    <a className='a-Menu-Link' href="/asdasd">
+                                        {el}
+                                        <VectorLeft className='vector-Left' />
+                                    </a>
                                 </li>
                             </ul>
                         })

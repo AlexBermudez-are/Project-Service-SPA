@@ -15,7 +15,7 @@ const Slider = () => {
                     <FlowerRight />
                 </div>
                 <div className='slider-Component'>
-                    <section>
+                    <section className='comillas'>
                         <Comillas />
                     </section>
                     <p className='testimonial-1'>Me gustaría agradecer al sitio, me ayudó de una manera inimaginable,
