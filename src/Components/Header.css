@@ -1,20 +1,28 @@
-.container-Component-Home-Header{
+.container-Component-Home-Header {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.section-Vector-Search{
+.section-Vector-Search {
     display: flex;
     width: 40%;
     height: 35px;
     justify-content: space-evenly;
 }
- .section-Vector-Search input {
+
+.section-Vector-Search input {
     width: 75%;
- }
- .section-Vector-Search button {
+}
+
+.section-Vector-Search button {
     margin: 0;
     padding: 0;
     border: none;
- }
+}
+
+@media(max-width:425px) {
+    .section-Vector-Search {
+        display: none;
+    }
+}
