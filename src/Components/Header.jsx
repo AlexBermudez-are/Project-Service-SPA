@@ -33,6 +33,7 @@ const Header = () => {
                 <button
                     onClick={() => setControllBtn(!controllBtn)}
                     className="hamburger hamburger--collapse"
+                    style={{padding:"0"}}
                     type="button"
                     ref={refBtn}
                 >

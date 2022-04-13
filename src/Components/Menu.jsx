@@ -27,37 +27,39 @@ const Menu = ({ controllBtn, setControllBtn }) => {
             <section className='container-Sections-Menu-Hamburguer' ref={ControllAnimation} onClick={(e) => {
                 e.stopPropagation()
             }}>
-                <div className='container-List-Embarazo'>
-                    <h3 className='title-Embarazo'>Embarazo</h3>
-                    <p className='line'></p>
-                    {
-                        Embarazo.map((el, index) => {
-                            return <ul key={index} className='container-List'>
-                                <li className='li-Redirect-Pages'>
-                                    <a className='a-Menu-Link' href="/asdasd">
-                                        {el}
-                                        <VectorLeft className='vector-Left' />
-                                    </a>
-                                </li>
-                            </ul>
-                        })
-                    }
-                </div>
-                <div className='container-List-Educacion'>
-                    <h3 className='title-Educacion'>Educación</h3>
-                    <p className='line'></p>
-                    {
-                        Educacion.map((el, index) => {
-                            return <ul key={index} className='container-List'>
-                                <li className='li-Redirect-Pages'>
-                                    <a className='a-Menu-Link' href="/asdasd">
-                                        {el}
-                                        <VectorLeft className='vector-Left' />
-                                    </a>
-                                </li>
-                            </ul>
-                        })
-                    }
+                <div>
+                    <section className='container-List-Embarazo'>
+                        <h3 className='title-Embarazo'>Embarazo</h3>
+                        <p className='line'></p>
+                        {
+                            Embarazo.map((el, index) => {
+                                return <ul key={index} className='container-List'>
+                                    <li className='li-Redirect-Pages'>
+                                        <a className='a-Menu-Link' href="/asdasd">
+                                            {el}
+                                            <VectorLeft className='vector-Left' />
+                                        </a>
+                                    </li>
+                                </ul>
+                            })
+                        }
+                    </section>
+                    <section className='container-List-Educacion'>
+                        <h3 className='title-Educacion'>Educación</h3>
+                        <p className='line'></p>
+                        {
+                            Educacion.map((el, index) => {
+                                return <ul key={index} className='container-List'>
+                                    <li className='li-Redirect-Pages'>
+                                        <a className='a-Menu-Link' href="/asdasd">
+                                            {el}
+                                            <VectorLeft className='vector-Left' />
+                                        </a>
+                                    </li>
+                                </ul>
+                            })
+                        }
+                    </section>
                 </div>
             </section>
         </div>

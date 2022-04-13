@@ -17,10 +17,20 @@
     left: 0;
     position: fixed;
     transition: all .3s ease;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
 }
-.btn-Hamburguer.active{
-    left: 30%;
+
+.btn-Hamburguer.active {
+    left: 40%;
     transition: all .2s ease;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    width: 30px;
 }
 
 .section-Vector-Search {
