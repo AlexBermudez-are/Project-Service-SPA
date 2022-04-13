@@ -27,7 +27,7 @@ const Menu = ({ controllBtn, setControllBtn }) => {
             <section className='container-Sections-Menu-Hamburguer' ref={ControllAnimation} onClick={(e) => {
                 e.stopPropagation()
             }}>
-                <div>
+                <div className='size-Menu'>
                     <section className='container-List-Embarazo'>
                         <h3 className='title-Embarazo'>Embarazo</h3>
                         <p className='line'></p>

@@ -8,6 +8,10 @@
     z-index: 998;
 }
 
+.size-Menu{
+    height: 450px;
+}
+
 .container-Sections-Menu-Hamburguer {
     width: 55%;
     background-color: white;
