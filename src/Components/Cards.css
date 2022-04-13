@@ -1,0 +1,47 @@
+.container-Card {
+    width: 48%;
+}
+
+.container-Card img{
+    width: 100%;
+}
+
+.tag-Class {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #F778B9;
+    margin: 0;
+    text-align: start;
+    padding-left: 3%;
+}
+
+.tag-Title {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #414141;
+    margin: 0;
+    text-align: start;
+    padding-left: 3%;
+}
+
+.tag-Description {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #414141;
+    margin: 0;
+    text-align: start;
+    padding-left: 3%;
+}
