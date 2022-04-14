@@ -7,8 +7,13 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { useRef } from 'react'
 
+const inputObj = {
+    search: ""
+}
+
 const Header = () => {
     const [controllBtn, setControllBtn] = useState(false)
+    const [input, setInput] = useState(inputObj)
     const refBtn = useRef()
     const moveBtn = useRef()
 
@@ -33,7 +38,7 @@ const Header = () => {
                 <button
                     onClick={() => setControllBtn(!controllBtn)}
                     className="hamburger hamburger--collapse"
-                    style={{padding:"0"}}
+                    style={{ padding: "0" }}
                     type="button"
                     ref={refBtn}
                 >
@@ -46,8 +51,19 @@ const Header = () => {
                 <img src={imgTheMindIsWonderful} alt="" />
             </section>
             <section className='section-Vector-Search'>
-                <input type="search" name="search" placeholder='Buscar' />
-                <button>
+                <input
+                    type="search"
+                    name="search"
+                    placeholder='Buscar'
+                    autoComplete='off'
+                    onChange={(e) => {
+                        setInput({
+                            ...input,
+                            [e.target.name]: e.target.value
+                        })
+                    }}
+                />
+                <button onClick={() => alert(`Buscando '${input.search}'...`)}>
                     <BtnSearchHeader />
                 </button>
             </section>

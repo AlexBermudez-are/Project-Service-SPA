@@ -24,10 +24,11 @@
         text-align: left;
         margin-top: 5%;
         margin-bottom: 5%;
+        width: 95%;
     }
 
     .section-Info-Vectores-Component-Reverse {
-        width: 90%;
+        width: 85%;
         margin: auto;
         display: flex;
         flex-direction: row-reverse;

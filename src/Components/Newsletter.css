@@ -135,6 +135,11 @@
 
     .btn-suscribirse {
         width: 20%;
+        cursor: pointer;
+    }
+
+    .btn-suscribirse:hover {
+        background-color: #4a4a4a;
     }
 
     .input-Vector {

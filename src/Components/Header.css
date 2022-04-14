@@ -96,6 +96,24 @@
     .btn-Hamburguer.active {
         left: 20%;
     }
+
+    .container-Component-Home-Header {
+        justify-content: space-around;
+    }
+
+    .section-Vector-Search {
+        width: 30%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        border: 1px solid #B1B1B1;
+    }
+
+    .section-Vector-Search input {
+        border: none;
+    }
 }
 
 @media screen and (min-width:450px) and (max-width:768px) {
@@ -106,15 +124,24 @@
     .section-Vector-Search {
         display: flex;
         align-items: center;
-        width: 40%;
+        width: 35%;
+        height: 45px;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        border: 1px solid #B1B1B1;
     }
 
     .section-Vector-Search input {
         height: 100%;
+        border: none;
     }
 
     .container-Logo-Header {
         padding-left: 40%;
+    }
+
+    .container-Component-Home-Header {
+        justify-content: space-evenly;
     }
 }
 

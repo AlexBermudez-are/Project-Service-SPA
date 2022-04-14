@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react'
 import { useEffect } from 'react'
@@ -18,9 +19,7 @@ let timeOut;
 
 const Carrusel = () => {
 
-    const [descripcion, setDescripcion] = useState();
     const [imgActual, setimgActual] = useState();
-    const [titulo, setTitulo] = useState();
 
     const imgRefCarrusel = useRef(); //referencia de la imagen del carrusel
     const datosRef = useRef(); //referencia del texto de info
@@ -35,9 +34,10 @@ const Carrusel = () => {
                 contador = 0;
 
                 imgRefCarrusel.current.className = "img-Home-Actual animacionImg"; //cambia la opacidad de 1 a 0
-                if (imgActual) console.log(imgActual);
+                datosRef.current.className = 'datos-Title-Descripcion-Carrusel-Home'
                 return timeOut = setTimeout(() => {
                     imgRefCarrusel.current.className = "img-Home-Actual"; //cambia la opacidad de 0 a 1
+                    datosRef.current.className = 'datos-Title-Descripcion-Carrusel-Home active'
                     setimgActual(arrPhotos[contador]);
                 }, 500);
             }
@@ -46,8 +46,10 @@ const Carrusel = () => {
                 contador++;
 
                 imgRefCarrusel.current.className = "img-Home-Actual animacionImg"; //cambia la opacidad de 1 a 0
+                datosRef.current.className = 'datos-Title-Descripcion-Carrusel-Home'
                 return timeOut = setTimeout(() => {
                     imgRefCarrusel.current.className = "img-Home-Actual"; //cambia la opacidad de 0 a 1
+                    datosRef.current.className = 'datos-Title-Descripcion-Carrusel-Home active'
                     setimgActual(arrPhotos[contador]);
                 }, 500);
             }
@@ -57,6 +59,11 @@ const Carrusel = () => {
     useEffect(() => {
         intervalFunction(arrPhotos[0])
         setimgActual(arrPhotos[0])
+
+        return () => {
+            clearInterval(interval)
+            clearTimeout(timeOut)
+        }
     }, [])
 
 
@@ -66,18 +73,25 @@ const Carrusel = () => {
             {
                 imgActual
                     ?
-                    <div className="">
+                    <div className="container-Carrusel-Component">
                         <section className='img-Home-Actual' ref={imgRefCarrusel}>
-                            <img src={imgActual} width='100%' height="300px" alt={titulo} />
+                            <img
+                                src={imgActual}
+                                width='100%'
+                                height="300px"
+                                alt="title-Home-La-Mente-Es-Maravillosa"
+                            />
                         </section>
-                        {/* <section
-                            className="datos-Title-Descripcion-Carrusel-Home"
+                        <section
+                            className="datos-Title-Descripcion-Carrusel-Home active"
                             ref={datosRef}
-                            onMouseLeave={() => datosRef.current.className = "datos-Title-Descripcion-Carrusel-Home"}
-                            onMouseEnter={(() => datosRef.current.className = "datos-Title-Descripcion-Carrusel-Home active")}>
-                            <h1>{titulo}</h1>
-                            <p>{descripcion}</p>
-                        </section> */}
+                        >
+                            <h1>Su viaje de
+                                <div style={{ color: "rgb(247, 120, 185)" }}>salud emocional</div>
+                                empieza aqui
+                            </h1>
+                            <p>Conoce nuestro profesionales con licencia</p>
+                        </section>
                     </div>
                     : <h1>cargando</h1>
             }
