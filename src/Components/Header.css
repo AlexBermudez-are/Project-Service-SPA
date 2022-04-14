@@ -6,10 +6,15 @@
     height: 60px;
     background-color: white;
     z-index: 999;
+    box-shadow: 0 4px 20px 1px rgb(0 0 0 / 20%);
 }
 
 .container-Logo-Header {
     padding-left: 45%;
+}
+
+.hamburger {
+    outline: none;
 }
 
 .btn-Hamburguer {
@@ -38,6 +43,7 @@
     width: 40%;
     height: 35px;
     justify-content: space-evenly;
+    display: none;
 }
 
 .section-Vector-Search input {
@@ -50,8 +56,77 @@
     border: none;
 }
 
-@media(max-width:425px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
     .section-Vector-Search {
-        display: none;
+        display: block;
+        width: 30%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        border: 1px solid #B1B1B1;
+    }
+
+    .section-Vector-Search input {
+        border: none;
+        height: 100%;
+        outline: none;
+    }
+
+    .container-Component-Home-Header {
+        justify-content: space-around;
+        height: 90px;
+    }
+
+    .container-Logo-Header img {
+        width: 200px;
+    }
+
+    .container-Logo-Header {
+        padding-left: 35%;
+    }
+
+    .btn-Hamburguer.active {
+        left: 16%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .btn-Hamburguer.active {
+        left: 20%;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:768px) {
+    .btn-Hamburguer.active {
+        left: 28%;
+    }
+
+    .section-Vector-Search {
+        display: flex;
+        align-items: center;
+        width: 40%;
+    }
+
+    .section-Vector-Search input {
+        height: 100%;
+    }
+
+    .container-Logo-Header {
+        padding-left: 40%;
+    }
+}
+
+@media (max-width: 375px) {
+    .btn-Hamburguer.active {
+        left: 38%;
+    }
+}
+
+@media(max-width:320px) {
+    .btn-Hamburguer.active {
+        left: 37%;
+        transition: all .2s ease;
     }
 }

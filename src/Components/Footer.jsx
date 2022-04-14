@@ -19,7 +19,7 @@ const Footer = () => {
                 </p>
             </section>
             <section>
-                <Separator />
+                <Separator className='separator' />
             </section>
             <section className='container-Links' >
                 <a className='links-Footer-Component' href="/">Política de Cookies</a>

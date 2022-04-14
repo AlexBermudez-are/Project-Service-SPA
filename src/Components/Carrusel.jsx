@@ -70,14 +70,14 @@ const Carrusel = () => {
                         <section className='img-Home-Actual' ref={imgRefCarrusel}>
                             <img src={imgActual} width='100%' height="300px" alt={titulo} />
                         </section>
-                        <section
+                        {/* <section
                             className="datos-Title-Descripcion-Carrusel-Home"
                             ref={datosRef}
                             onMouseLeave={() => datosRef.current.className = "datos-Title-Descripcion-Carrusel-Home"}
                             onMouseEnter={(() => datosRef.current.className = "datos-Title-Descripcion-Carrusel-Home active")}>
                             <h1>{titulo}</h1>
                             <p>{descripcion}</p>
-                        </section>
+                        </section> */}
                     </div>
                     : <h1>cargando</h1>
             }

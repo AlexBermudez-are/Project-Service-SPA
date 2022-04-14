@@ -46,7 +46,7 @@ const Header = () => {
                 <img src={imgTheMindIsWonderful} alt="" />
             </section>
             <section className='section-Vector-Search'>
-                <input type="search" name="search" id="" />
+                <input type="search" name="search" placeholder='Buscar' />
                 <button>
                     <BtnSearchHeader />
                 </button>

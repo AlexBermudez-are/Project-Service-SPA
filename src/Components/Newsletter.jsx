@@ -8,11 +8,11 @@ const Newsletter = () => {
             <section className='container-Input-Vector'>
                 <NewsletterSVG className='vector-Newsletter' />
                 <div className='input-Vector'>
-                    <section>
+                    <section className='text'>
                         <h6 className='text-Title-Newsletter'>Title</h6>
                         <p className='text-Text-Newsletter'>Text</p>
                     </section>
-                    <section>
+                    <section className='section-Input-Newsletter'>
                         <label htmlFor="input" className='label-Newsletter'>
                             <input className='input-Email-Newsletter' placeholder='Inserte tu correo' type="email" name="email" />
                             <button type="submit" className='btn-suscribirse'>

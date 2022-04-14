@@ -19,7 +19,7 @@ const InfoConVectores = () => {
                     </p>
                 </div>
             </section>
-            <section className='section-Info-Vectores-Component'>
+            <section className='section-Info-Vectores-Component-Reverse'>
                 <div>
                     <Innovacion className='component-Vector' />
                 </div>

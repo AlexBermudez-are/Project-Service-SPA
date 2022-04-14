@@ -3,7 +3,7 @@
     margin: auto;
 }
 
-.container-Card img{
+.container-Card img {
     width: 100%;
 }
 
@@ -18,7 +18,6 @@
     color: #F778B9;
     margin: 0;
     text-align: start;
-    padding-left: 3%;
 }
 
 .tag-Title {
@@ -31,7 +30,6 @@
     color: #414141;
     margin: 0;
     text-align: start;
-    padding-left: 3%;
 }
 
 .tag-Description {
@@ -44,5 +42,49 @@
     color: #414141;
     margin: 0;
     text-align: start;
-    padding-left: 3%;
+}
+
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    .container-Card {
+        width: 20%;
+    }
+
+    .container-Card {
+        width: 20%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        border-radius: 10px;
+        transform: scale(1);
+        transition: transform .5s ease;
+    }
+
+    .container-Card:hover {
+        transform: scale(1.1);
+        transition: transform .5s ease;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container-Card img {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .tag-Class {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .tag-Title {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .tag-Description {
+        font-size: 13px;
+        width: 90%;
+        padding-bottom: 5%;
+    }
 }

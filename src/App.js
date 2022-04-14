@@ -20,7 +20,7 @@ function App() {
       <p className='line'></p>
       <ContainerAccordion style={{ zIndex: "996" }} />
       <Newsletter />
-      <Publicidad style={{ width: "100%", height: "53px" }} />
+      <Publicidad className='publicidad' />
       <Footer />
     </div>
   );

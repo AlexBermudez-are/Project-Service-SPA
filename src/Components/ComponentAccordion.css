@@ -27,12 +27,11 @@
 .texto-Accordion {
     margin: 0;
     border-radius: 0 0 5px 5px;
-    color: #ff6363;
     font-size: 12px;
     transform: translate(0px, -10px);
     transition: transform .2s ease, visibility .1s ease;
     visibility: hidden;
-    width: 85%;
+    width: 60%;
     z-index: 997;
     padding-left: 1%;
     font-family: 'Source Sans Pro';
@@ -58,6 +57,131 @@
 }
 
 .text-Extra.active {
-    height: 50px;
+    height: 70px;
     transition: all .5s ease;
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+    .text-FAQ-Component {
+        width: 35%;
+        justify-content: space-between;
+        padding-bottom: 1%;
+        cursor: pointer;
+    }
+
+    .accordion-Text {
+        font-size: 20px;
+        padding-left: 3%;
+    }
+
+    .texto-Accordion,
+    .texto-Accordion.active {
+        width: 35%;
+        font-size: 15px;
+    }
+
+    .Line-Spacing {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .text-FAQ-Component {
+        width: 40%;
+    }
+
+    .text-Extra,
+    .text-Extra.active {
+        width: 35%;
+        padding-left: 1%;
+        width: 38%;
+    }
+
+    .texto-Accordion,
+    .texto-Accordion.active {
+        width: 100%;
+        font-size: 13px;
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+
+    .accordion-Text {
+        letter-spacing: -0.03em;
+        font-size: 17px;
+    }
+
+    .Line-Spacing {
+        width: 35.5%;
+        margin-left: 2.2%;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width:768px) {
+
+    .text-Extra,
+    .text-Extra.active {
+        width: 47%;
+    }
+
+    .texto-Accordion.active {
+        width: 100%;
+    }
+
+    .text-FAQ-Component {
+        width: 47%;
+    }
+
+    .accordion-Text {
+        font-size: 14px;
+        letter-spacing: .03em;
+    }
+
+    .texto-Accordion {
+        width: 100%;
+        padding-top: 2%;
+        font-size: 11px;
+    }
+
+    .Line-Spacing {
+        width: 45%;
+        margin-left: 1%;
+    }
+}
+
+@media(max-width:375px) {
+    .text-FAQ-Component {
+        width: 70%;
+    }
+
+    .text-Extra.active {
+        height: 65px;
+    }
+
+    .texto-Accordion {
+        padding-left: 2%;
+        width: 70%;
+        padding-top: 0;
+    }
+
+    .Line-Spacing {
+        width: 66%;
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 320px) {
+    .text-FAQ-Component {
+        width: 85%;
+    }
+
+    .Line-Spacing {
+        width: 79%;
+        margin-left: 3%;
+    }
+
+    .texto-Accordion {
+        padding-left: 3%;
+        width: 80%;
+    }
 }

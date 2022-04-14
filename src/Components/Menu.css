@@ -8,7 +8,7 @@
     z-index: 998;
 }
 
-.size-Menu{
+.size-Menu {
     height: 450px;
 }
 
@@ -76,6 +76,24 @@
 .vector-Left {
     width: 20px;
     height: 15px;
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+    .container-Sections-Menu-Hamburguer.active {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .container-Sections-Menu-Hamburguer {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+    .container-Sections-Menu-Hamburguer.active {
+        width: 40%;
+    }
 }
 
 @media(max-width:375px) {

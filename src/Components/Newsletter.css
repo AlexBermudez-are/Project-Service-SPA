@@ -26,6 +26,7 @@
     font-size: 15px;
     line-height: 20px;
     margin: 0;
+    color: #555555;
 }
 
 .text-Text-Newsletter {
@@ -38,13 +39,15 @@
     color: #555555;
     margin: 0;
 }
-.input-Email-Newsletter{
+
+.input-Email-Newsletter {
     border: none;
     background-color: #ECF0F7;
     width: 65%;
     height: 95%;
     outline: none;
 }
+
 .label-Newsletter {
     display: flex;
     justify-content: space-evenly;
@@ -85,4 +88,148 @@
     z-index: 995;
     justify-content: space-evenly;
     position: absolute;
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+    .vector-Newsletter {
+        height: 250px;
+        margin-top: -4%;
+    }
+
+    .text {
+        margin-top: -9%;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .text-Title-Newsletter {
+        font-size: 30px;
+    }
+
+    .text-Text-Newsletter {
+        font-size: 15px;
+    }
+
+    .container-Input-Vector {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .rectangle-Container {
+        top: 0;
+        height: 200px;
+    }
+
+    .section-Input-Newsletter {
+        width: 100%;
+    }
+
+    .label-Newsletter {
+        height: 60px;
+        width: 90%;
+    }
+
+    .btn-suscribirse {
+        width: 20%;
+    }
+
+    .input-Vector {
+        height: 150px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    .container-Input-Vector {
+        height: 150px;
+    }
+
+    .section-Input-Newsletter {
+        width: 90%;
+    }
+
+    .btn-suscribirse {
+        height: 80%;
+        width: 20%;
+    }
+
+    .vector-Newsletter {
+        height: 150px;
+    }
+
+    .input-Vector {
+        width: 70%;
+        height: 115px;
+        justify-content: space-between;
+    }
+
+    .text {
+        height: 51px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .input-Email-Newsletter {
+        height: 90%;
+    }
+
+    .rectangle-Container {
+        height: 130px;
+    }
+
+    .label-Newsletter {
+        height: 50px;
+    }
+
+    .text-Text-Newsletter {
+        font-size: 15px;
+    }
+
+    .text-Title-Newsletter {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+    .input-Vector {
+        height: 105px;
+    }
+
+    .section-Input-Newsletter {
+        width: 100%;
+    }
+
+    .label-Newsletter {
+        width: 90%;
+        height: 45px;
+    }
+
+    .input-Email-Newsletter {
+        width: 75%;
+    }
+
+    .btn-suscribirse {
+        height: 90%;
+    }
+}
+
+@media(max-width:375px) {
+    .btn-suscribirse {
+        width: 35%;
+    }
+
+    .input-Email-Newsletter {
+        width: 55%;
+    }
+}
+
+@media(max-width:320px) {
+    .btn-suscribirse {
+        width: 40%;
+    }
 }

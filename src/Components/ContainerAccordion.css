@@ -1,6 +1,25 @@
 .container-FAQ-Accordion {
     width: 90%;
     margin: auto;
-    padding-bottom: 15%;
-    padding-top: 5%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px){
+.container-FAQ-Accordion{
+    margin-top: 10%;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container-FAQ-Accordion {
+        margin-top: 10%;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+    .container-FAQ-Accordion {
+        margin-top: 15%;
+    }
 }
