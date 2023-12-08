@@ -5,8 +5,8 @@ import { useEffect } from 'react'
 import { ReactComponent as VectorLeft } from '../Assets/Icons/VectorLeft.svg'
 import './Menu.css'
 
-const Embarazo = ["Quiero ser mamá", "Voy a ser mamá", "Parto"]
-const Educacion = ["Aprende a ser mamá", "Educación para bebés", "Educacion para niños"]
+const Tratamientos = ["Exfoliante", "Skin Care", "Extracciones"]
+const Turnos = ["Saca tu turno", "Asesoramientos", "Consultas"]
 
 const Menu = ({ controllBtn, setControllBtn }) => {
 
@@ -29,10 +29,10 @@ const Menu = ({ controllBtn, setControllBtn }) => {
             }}>
                 <div className='size-Menu'>
                     <section className='container-List-Embarazo'>
-                        <h3 className='title-Embarazo'>Embarazo</h3>
+                        <h3 className='title-Embarazo'>Tratamientos</h3>
                         <p className='line'></p>
                         {
-                            Embarazo.map((el, index) => {
+                            Tratamientos.map((el, index) => {
                                 return <ul key={index} className='container-List'>
                                     <li className='li-Redirect-Pages'>
                                         <a className='a-Menu-Link' href="/asdasd">
@@ -45,10 +45,10 @@ const Menu = ({ controllBtn, setControllBtn }) => {
                         }
                     </section>
                     <section className='container-List-Educacion'>
-                        <h3 className='title-Educacion'>Educación</h3>
+                        <h3 className='title-Educacion'>Turnos</h3>
                         <p className='line'></p>
                         {
-                            Educacion.map((el, index) => {
+                            Turnos.map((el, index) => {
                                 return <ul key={index} className='container-List'>
                                     <li className='li-Redirect-Pages'>
                                         <a className='a-Menu-Link' href="/asdasd">

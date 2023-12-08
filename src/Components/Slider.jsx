@@ -11,15 +11,15 @@ import { useRef } from 'react'
 const name = [
     {
         name: " ~ Maria Montessori ~ ",
-        testimony: "Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el psicólogo fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo"
+        testimony: "Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el masajista fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo"
     },
     {
         name: " ~ Maria Montessori Mana ~ ",
-        testimony: "Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el psicólogo fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo x2222222222222222222222222222222222222222222222222222"
+        testimony: "Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el masajista fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo x2222222222222222222222222222222222222222222222222222"
     },
     {
         name: " ~ Maria Montessori Moriño ~ ",
-        testimony: "Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el psicólogo fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo x33333333333333333333333333333333333333333333333333333"
+        testimony: "Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el masajista fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo x33333333333333333333333333333333333333333333333333333"
     }
 ]
 

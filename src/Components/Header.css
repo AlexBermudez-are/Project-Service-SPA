@@ -1,159 +1,163 @@
 .container-Component-Home-Header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    height: 60px;
-    background-color: white;
-    z-index: 999;
-    box-shadow: 0 4px 20px 1px rgb(0 0 0 / 20%);
-}
-
-.container-Logo-Header {
-    padding-left: 45%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  height: 20vh;
+  background-color: white;
+  z-index: 999;
+  box-shadow: 0 4px 20px 1px rgb(0 0 0 / 20%);
 }
 
 .hamburger {
-    outline: none;
+  outline: none;
 }
 
 .btn-Hamburguer {
-    z-index: 999;
-    left: 0;
-    position: fixed;
-    transition: all .3s ease;
-    width: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5%;
+  z-index: 999;
+  left: 0;
+  position: fixed;
+  transition: all 0.3s ease;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
 }
 
 .btn-Hamburguer.active {
-    left: 40%;
-    transition: all .2s ease;
+  left: 40%;
+  transition: all 0.2s ease;
 }
 
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-    width: 30px;
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+  width: 30px;
 }
 
 .section-Vector-Search {
-    display: flex;
-    width: 40%;
-    height: 35px;
-    justify-content: space-evenly;
-    display: none;
+  display: flex;
+  width: 40%;
+  height: 35px;
+  justify-content: space-evenly;
+  display: none;
 }
 
 .section-Vector-Search input {
-    width: 75%;
+  width: 75%;
 }
 
 .section-Vector-Search button {
-    margin: 0;
-    padding: 0;
-    border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-    .section-Vector-Search {
-        display: block;
-        width: 30%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        border-radius: 5px;
-        border: 1px solid #B1B1B1;
-    }
+  .section-Vector-Search {
+    display: block;
+    width: 30%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+  }
 
-    .section-Vector-Search input {
-        border: none;
-        height: 100%;
-        outline: none;
-    }
+  .section-Vector-Search input {
+    border: none;
+    height: 100%;
+    outline: none;
+  }
 
-    .container-Component-Home-Header {
-        justify-content: space-around;
-        height: 90px;
-    }
+  .container-Component-Home-Header {
+    justify-content: space-around;
+    height: 20vh;
+  }
 
-    .container-Logo-Header img {
-        width: 200px;
-    }
+  .img-Spa-Logo {
+    height: inherit;
+    object-fit: contain;
+  }
 
-    .container-Logo-Header {
-        padding-left: 35%;
-    }
+  .container-Logo-Header img {
+    width: 200px;
+    height: 20vh;
+  }
 
-    .btn-Hamburguer.active {
-        left: 16%;
-    }
+  .btn-Hamburguer.active {
+    left: 16%;
+  }
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .btn-Hamburguer.active {
-        left: 20%;
-    }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .btn-Hamburguer.active {
+    left: 20%;
+  }
 
-    .container-Component-Home-Header {
-        justify-content: space-around;
-    }
+  .container-Component-Home-Header {
+    justify-content: space-around;
+  }
 
-    .section-Vector-Search {
-        width: 30%;
-        height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        border-radius: 5px;
-        border: 1px solid #B1B1B1;
-    }
+  .section-Vector-Search {
+    width: 30%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+  }
 
-    .section-Vector-Search input {
-        border: none;
-    }
+  .section-Vector-Search input {
+    border: none;
+  }
 }
 
-@media screen and (min-width:450px) and (max-width:768px) {
-    .btn-Hamburguer.active {
-        left: 28%;
-    }
+@media screen and (min-width: 450px) and (max-width: 768px) {
+  .btn-Hamburguer.active {
+    left: 28%;
+  }
 
-    .section-Vector-Search {
-        display: flex;
-        align-items: center;
-        width: 35%;
-        height: 45px;
-        justify-content: space-evenly;
-        border-radius: 5px;
-        border: 1px solid #B1B1B1;
-    }
+  .section-Vector-Search {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 45px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+  }
 
-    .section-Vector-Search input {
-        height: 100%;
-        border: none;
-    }
+  .section-Vector-Search input {
+    height: 100%;
+    border: none;
+  }
 
-    .container-Logo-Header {
-        padding-left: 40%;
-    }
+  .container-Logo-Header {
+    height: 20vh;
+  }
 
-    .container-Component-Home-Header {
-        justify-content: space-evenly;
-    }
+  .container-Component-Home-Header {
+    justify-content: space-evenly;
+  }
+
+  .img-Spa-Logo {
+    height: inherit;
+  }
 }
 
 @media (max-width: 375px) {
-    .btn-Hamburguer.active {
-        left: 38%;
-    }
+  .btn-Hamburguer.active {
+    left: 38%;
+  }
 }
 
-@media(max-width:320px) {
-    .btn-Hamburguer.active {
-        left: 37%;
-        transition: all .2s ease;
-    }
+@media (max-width: 320px) {
+  .btn-Hamburguer.active {
+    left: 37%;
+    transition: all 0.2s ease;
+  }
 }

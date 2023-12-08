@@ -6,7 +6,7 @@ const Cards = () => {
     return (
         <div className='container-Card'>
             <img src={imgCard} alt="card-Info-La-Mente-Es-Maravillosa" />
-            <p className='tag-Class'>Nutrición</p>
+            <p className='tag-Class'>Rutinas Nocturnas</p>
             <p className='tag-Title'>Colapso mental: cuando siento el peso del mundo sobre mí</p>
             <p className='tag-Description'>
                 A veces nos sentimos como Atlas,

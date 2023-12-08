@@ -1,5 +1,5 @@
 import React from 'react'
-import imgTheMindIsWonderful from "../Assets/Icons/Colorsulfix.svg"
+import spa_Logo from "../Assets/Img/spa_logo.png"
 import { ReactComponent as BtnSearchHeader } from '../Assets/Icons/buttonSearch.svg'
 import './Header.css'
 import Menu from './Menu'
@@ -48,24 +48,7 @@ const Header = () => {
                 </button>
             </section>
             <section className='container-Logo-Header'>
-                <img src={imgTheMindIsWonderful} alt="" />
-            </section>
-            <section className='section-Vector-Search'>
-                <input
-                    type="search"
-                    name="search"
-                    placeholder='Buscar'
-                    autoComplete='off'
-                    onChange={(e) => {
-                        setInput({
-                            ...input,
-                            [e.target.name]: e.target.value
-                        })
-                    }}
-                />
-                <button onClick={() => alert(`Buscando '${input.search}'...`)}>
-                    <BtnSearchHeader />
-                </button>
+                <img className='img-Spa-Logo' src={spa_Logo} alt="" />
             </section>
         </div>
     )

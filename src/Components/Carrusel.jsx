@@ -4,15 +4,14 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useRef } from 'react'
 import { useState } from 'react'
-import photo1 from '../Assets/Img/photo01.png'
-import photo2 from '../Assets/Img/photo02.png'
-import photo3 from '../Assets/Img/photo03.png'
-import photo4 from '../Assets/Img/photo04.png'
-import photo5 from '../Assets/Img/photo05.png'
+import photo1 from '../Assets/Img/tratamiento1.jpeg'
+import photo2 from '../Assets/Img/tratamiento2.jpg'
+import photo3 from '../Assets/Img/tratamiento3.jpg'
+import photo4 from '../Assets/Img/tratamiento4.jpeg'
 import './Carrusel.css'
 
 
-const arrPhotos = [photo1, photo2, photo3, photo4, photo5]
+const arrPhotos = [photo1, photo2, photo3, photo4]
 let contador = 0;
 let interval;
 let timeOut;
@@ -22,7 +21,6 @@ const Carrusel = () => {
     const [imgActual, setimgActual] = useState();
 
     const imgRefCarrusel = useRef(); //referencia de la imagen del carrusel
-    const datosRef = useRef(); //referencia del texto de info
 
     const intervalFunction = () => {//interval inicial y base, prevBtn y nextBtn ejecutan esta función
         clearInterval(interval)
@@ -34,10 +32,8 @@ const Carrusel = () => {
                 contador = 0;
 
                 imgRefCarrusel.current.className = "img-Home-Actual animacionImg"; //cambia la opacidad de 1 a 0
-                datosRef.current.className = 'datos-Title-Descripcion-Carrusel-Home'
                 return timeOut = setTimeout(() => {
                     imgRefCarrusel.current.className = "img-Home-Actual"; //cambia la opacidad de 0 a 1
-                    datosRef.current.className = 'datos-Title-Descripcion-Carrusel-Home active'
                     setimgActual(arrPhotos[contador]);
                 }, 500);
             }
@@ -46,10 +42,8 @@ const Carrusel = () => {
                 contador++;
 
                 imgRefCarrusel.current.className = "img-Home-Actual animacionImg"; //cambia la opacidad de 1 a 0
-                datosRef.current.className = 'datos-Title-Descripcion-Carrusel-Home'
                 return timeOut = setTimeout(() => {
                     imgRefCarrusel.current.className = "img-Home-Actual"; //cambia la opacidad de 0 a 1
-                    datosRef.current.className = 'datos-Title-Descripcion-Carrusel-Home active'
                     setimgActual(arrPhotos[contador]);
                 }, 500);
             }
@@ -84,7 +78,6 @@ const Carrusel = () => {
                         </section>
                         <section
                             className="datos-Title-Descripcion-Carrusel-Home active"
-                            ref={datosRef}
                         >
                             <h1>Su viaje de
                                 <div style={{ color: "rgb(247, 120, 185)" }}>salud emocional</div>
